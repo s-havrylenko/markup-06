@@ -386,8 +386,8 @@
                 </address>
             </div>            
                         
-            <div class="">
-                <b class="call">Присоединяйтесь</b>
+            <div class="footer-networks">
+                <b class="footer-call">Присоединяйтесь</b>
                 <ul class="footer-sn list">
                     <li class="item">
                         <!-- <a href=""><img src="./images/icon-instagram.svg" alt="Иконка Instagram"></a> -->
@@ -427,15 +427,18 @@
                 </ul>
             </div>
             
-            <div class="footer-send">
+            <div class="footer-form">
                 <b class="footer-call">Подпишитесь на рассылку </b>
-                <button type="button" class="button primary send">
+                
+                <input type="email" name="mail" id="mail" placeholder="E-mail" />
+                
+                <button type="submit" class="button primary send">
                     Подписаться
                     <svg class="icon-send" width="24" height="24">
                         <use href="./images/sprite.svg#icon-send"></use>
                     </svg>
                 </button>
-            </div>            
+            </div>
         </div>
     </footer>
 
@@ -447,9 +450,10 @@
                     <use href="./images/sprite-modal.svg#close"></use>
                 </svg>
             </button>
+            
+            <form class="form">                              
+                <b class="call">Оставьте свои данные, мы вам перезвоним</b>
 
-            <b class="call">Оставьте свои данные, мы вам перезвоним</b>
-            <form class="form">
                 <div class="form-field">
                     <label for="name">Имя</label>
                     <input type="text" name="name" id="name" />
@@ -465,16 +469,16 @@
                     <input type="email" name="mail" id="mail" />
                 </div>
 
-                <textarea class="form-field" name="commet" id="" rows="7" placeholder="Комментарий"></textarea>
+                <textarea class="form-field-commet" name="commet" id="" rows="7" placeholder="Комментарий"></textarea>
 
-                <div class="">
-                    <input type="checkbox" value="" id="agreement" />
+                <div class="check-box">
+                    <input type="checkbox" value="" id="agreement" class="checkbox"/>
                     <label for="agreement">Соглашаюсь с рассылкой и принимаю 
                         <a href="" class="modal-link">Условия договора</a>
                     </label>
                 </div>
 
-                <button type="submit">Отправить</button>
+                <button type="submit" class="button primary form-button">Отправить</button>
             </form>
 
 

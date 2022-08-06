@@ -455,73 +455,55 @@
                 <b class="call">Оставьте свои данные, мы вам перезвоним</b>
 
                 <div class="form-field">
+                    <input type="text" name="name" id="name" placeholder=" " />
                     <label for="name">Имя</label>
-                    <input type="text" name="name" id="name" />
+                    <svg class="form-icon" width="12" height="12">
+                        <use href="./images/sprite-modal.svg#icon-name"></use>
+                    </svg>
                 </div>
 
                 <div class="form-field">
+                    <input type="tel" name="tel" id="tel" placeholder=" " />
                     <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" />
+                    <svg class="form-icon" width="13" height="13">
+                        <use href="./images/sprite-modal.svg#icon-telephone"></use>
+                    </svg>
                 </div>
 
                 <div class="form-field">
+                    <input type="email" name="mail" id="mail" placeholder=" " />
                     <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" />
+                    <svg class="form-icon" width="15" height="12">
+                        <use href="./images/sprite-modal.svg#icon-mail"></use>
+                    </svg>
                 </div>
 
-                <textarea class="form-field-commet" name="commet" id="" rows="7" placeholder="Комментарий"></textarea>
-
-                <div class="check-box">
+                <div class="form-commit">
+                    <textarea class="form-field-commet" name="commet" id="" rows="6" placeholder=" "></textarea>
+                    <label for="mail">Комментарий</label>
+                </div>
+                
+                <!-- <div class="form-checkbox">
                     <input type="checkbox" value="" id="agreement" class="checkbox"/>
                     <label for="agreement">Соглашаюсь с рассылкой и принимаю 
-                        <a href="" class="modal-link">Условия договора</a>
+                        <a href="" class="form-link">Условия договора</a>
                     </label>
-                </div>
+                </div> -->
+
+                <label class="form-checkbox">
+                    <input type="checkbox" value="" class="checkbox" />
+                    <svg class="checkbox-icon" width="16" height="15">
+                        <use href="./images/sprite-modal.svg#icon-confim"></use>
+                    </svg>
+
+                    <span class="checkbox-text">
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="form-link">Условия договора</a>   
+                    </span>                 
+                </label>                                                    
 
                 <button type="submit" class="button primary form-button">Отправить</button>
             </form>
-
-
-
-
-            <!-- <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <ul class="list flex-modal">
-                <li class="icon-background">
-                    <svg class="icon-name">
-                        <use href="./images/sprite-modal.svg#icon-name"></use>
-                    </svg>
-                    <span class="modal-text">Имя</span>
-                </li>
-
-                <li class="icon-background">
-                    <svg class="icon-telephone">
-                        <use href="./images/sprite-modal.svg#icon-telephone"></use>
-                    </svg>
-                    <span class="modal-text">Телефон</span>
-                </li>
-
-                <li class="icon-background">
-                    <svg class="icon-mail">
-                        <use href="./images/sprite-modal.svg#icon-mail"></use>
-                    </svg>
-                    <span class="modal-text">Почта</span>
-                </li>
-
-                <li class="commet-background">
-                    <span class="modal-text">Комментарий</span>
-                </li>                
-            </ul>
-
-            <div class="modal-confim-flex">
-                <button type="button" class="button-confim">
-                    <svg class="icon-confim">
-                        <use href="./images/sprite-modal.svg#icon-confim"></use>
-                    </svg>
-                </button>
-                <p class="modal-confim-text">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a></p>
-                
-                <button type="button" class="button primary modal-button">Отправить</button>
-            </div> -->
 
         </div>
     </div>
